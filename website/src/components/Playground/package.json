@@ -5,7 +5,9 @@
   "author": "Daniel Büchele",
   "license": "MIT",
   "scripts": {
-    "build": "webpack && cp ../../../node_modules/antd/dist/antd.min.css dist/antd.min.css"
+    "build": "webpack && cp ../../../node_modules/antd/dist/antd.min.css dist/antd.min.css",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
@@ -14,6 +16,10 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.1.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "webpack": "^4.38.0"
+    "webpack": "^5.0.0"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.503.0"
   }
 }
