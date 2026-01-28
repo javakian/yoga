@@ -8,7 +8,7 @@
     "build": "webpack && cp ../../../node_modules/antd/dist/antd.min.css dist/antd.min.css"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-transform-flow-strip-types": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
